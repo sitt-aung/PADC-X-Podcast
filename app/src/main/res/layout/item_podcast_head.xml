@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_large">
+
+    <com.samyanmar.padc_x_podcast.views.components.RoundedCornerImageView
+        android:id="@+id/ivPodcast"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/background03"
+        android:scaleType="centerCrop"
+        app:cornerRadius="@dimen/margin_medium_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Women in Tech Podcast available now testing"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:textSize="@dimen/text_regular_2x"
+        android:fontFamily="@font/quicksand"
+        android:textColor="@color/white"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintTop_toTopOf="@id/ivPodcast"
+        app:layout_constraintBottom_toBottomOf="@id/ivPodcast"
+        app:layout_constraintStart_toEndOf="@id/ivPodcast"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_large"
+        android:ellipsize="end"/>
+
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Designing for everyone, everywhere with Yosef P. available now testing"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:textColor="@color/textColorTertary"
+        android:fontFamily="@font/quicksand"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintTop_toTopOf="@id/ivPodcast"
+        app:layout_constraintBottom_toBottomOf="@id/ivPodcast"
+        app:layout_constraintStart_toEndOf="@id/ivPodcast"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_large"
+        android:ellipsize="end"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        app:layout_constraintVertical_bias="1"
+        android:progress="80"
+        android:progressBackgroundTint="@color/progressBarColor"
+        app:layout_constraintTop_toTopOf="@id/ivPodcast"
+        app:layout_constraintBottom_toBottomOf="@id/ivPodcast"
+        app:layout_constraintStart_toEndOf="@id/ivPodcast"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_large"/>
+
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvTimeLeft"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/text_small"
+        android:layout_height="wrap_content"
+        android:textColor="@color/progressBarColor"
+        android:fontFamily="@font/quicksand_bold"
+        app:layout_constraintTop_toTopOf="@id/progressBar"
+        app:layout_constraintBottom_toBottomOf="@id/progressBar"
+        app:layout_constraintStart_toEndOf="@id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="1h left"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

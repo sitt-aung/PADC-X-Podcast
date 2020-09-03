@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.samyanmar.padc_x_podcast"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "API_KEY", "\"${privateData}\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(":shared")
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+
+    implementation rootProject.ext.libraries.constraintLayout
+
+    // MMTextView
+    implementation rootProject.ext.libraries.mmTextView
+
+    // Material Design
+    implementation rootProject.ext.libraries.material
+
+    // GSON
+    implementation rootProject.ext.libraries.gson
+
+    // OKHttp
+    implementation rootProject.ext.libraries.okHttp
+
+    // Retrofit
+    implementation rootProject.ext.libraries.retrofit
+    implementation rootProject.ext.libraries.retrofitConverterGson
+    implementation rootProject.ext.libraries.retrofitAdapter
+
+    // RxKotlin
+    implementation rootProject.ext.libraries.rxKotlin
+    implementation rootProject.ext.libraries.rxAndroid
+
+    // Auto Image Slider
+    implementation rootProject.ext.libraries.autoImageSlider
+
+    // Glide
+    implementation rootProject.ext.libraries.glide
+    implementation rootProject.ext.libraries.legacySupport
+    annotationProcessor rootProject.ext.libraries.glideCompiler
+
+    // Swipe Refresh Layout
+    implementation rootProject.ext.libraries.swipeRefreshLayout
+
+    // LiveData
+    implementation rootProject.ext.libraries.liveData
+
+    // lifecycle components
+    implementation rootProject.ext.libraries.lifecycleExtensions
+    kapt rootProject.ext.libraries.lifecycleCompiler
+
+    // Annotation processor
+    kapt rootProject.ext.libraries.annotationProcessor
+
+    // Room
+    implementation rootProject.ext.libraries.room
+    kapt rootProject.ext.libraries.roomCompiler
+
+    // Work Manager
+    implementation rootProject.ext.libraries.workManager
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

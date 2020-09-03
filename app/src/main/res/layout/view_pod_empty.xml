@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samyanmar.padc_x_podcast.views.viewpods.EmptyViewPod
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivEmpty"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/background01"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvWelcome"
+        android:layout_marginBottom="@dimen/margin_large"/>
+
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:fontFamily="@font/quicksand_bold"
+        app:layout_constraintBottom_toTopOf="@id/tvDescription"
+        android:layout_marginBottom="@dimen/margin_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="@dimen/text_heading_1x"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_regular_2x"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:maxLines="3"
+        android:fontFamily="@font/quicksand"
+        android:text="@string/empty_description_text"
+        app:layout_constraintBottom_toTopOf="@id/btnFindNew"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/textColorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFindNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_large"
+        android:paddingBottom="@dimen/margin_large"
+        android:fontFamily="@font/quicksand_bold"
+        android:backgroundTint="@color/emptyViewBtn1"
+        android:layout_marginTop="@dimen/margin_large"
+        app:layout_constraintBottom_toTopOf="@id/btnReload"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cornerRadius="@dimen/margin_medium"
+        android:textColor="@color/black"
+        android:text="find something new"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnReload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_large"
+        android:paddingBottom="@dimen/margin_large"
+        android:backgroundTint="@color/category_1"
+        android:textColor="@color/black"
+        android:fontFamily="@font/quicksand_bold"
+        app:layout_constraintBottom_toTopOf="@id/ivMore"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cornerRadius="@dimen/margin_medium"
+        android:text="reload" />
+
+    <ImageView
+        android:id="@+id/ivMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more_horiz_24"
+        android:layout_marginBottom="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</com.samyanmar.padc_x_podcast.views.viewpods.EmptyViewPod>

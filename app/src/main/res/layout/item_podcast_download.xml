@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_large"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.samyanmar.padc_x_podcast.views.components.RoundedCornerImageView
+        android:id="@+id/ivPodcast"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/background03"
+        android:scaleType="centerCrop"
+        app:cornerRadius="@dimen/margin_medium_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:backgroundTint="@color/category_1"
+        android:fontFamily="@font/quicksand"
+        android:padding="@dimen/margin_small"
+        android:textSize="@dimen/text_smaller"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/ivPodcast"
+        app:layout_constraintBottom_toBottomOf="@id/ivPodcast"
+        app:layout_constraintStart_toEndOf="@id/ivPodcast"
+        android:layout_marginStart="@dimen/margin_large"
+        android:text="CULTURE"/>
+
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Designing for everyone, everywhere with Yosef P. available now testing"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:textSize="@dimen/text_regular_2x"
+        android:fontFamily="@font/quicksand"
+        app:layout_constraintTop_toTopOf="@id/ivPodcast"
+        app:layout_constraintBottom_toBottomOf="@id/ivPodcast"
+        app:layout_constraintStart_toEndOf="@id/ivPodcast"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_large"
+        android:ellipsize="end"/>
+
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="Weekly Podcast that explore each day, classic"
+        android:textStyle="bold"
+        android:textColor="@color/textColorTertary"
+        android:textSize="@dimen/text_regular_2x"
+        android:fontFamily="@font/quicksand"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintTop_toTopOf="@id/ivPodcast"
+        app:layout_constraintBottom_toBottomOf="@id/ivPodcast"
+        app:layout_constraintStart_toEndOf="@id/ivPodcast"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:ellipsize="end"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

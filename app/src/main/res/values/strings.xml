@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PADC-X-Podcast</string>
+    <string name="bottom_nav_menu_txt_home">Home</string>
+    <string name="bottom_nav_menu_txt_search">Search</string>
+    <string name="bottom_nav_menu_txt_download">Download</string>
+    <string name="bottom_nav_menu_txt_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_screen_txt_podcast">Podcast</string>
+    <string name="home_screen_txt_description">
+        There are many variations of passages of Lorem Ipsum available,
+        but the majority have suffered alteration in some form, by injected humour,
+        or randomised words which don\'t look even slightly believable.
+    </string>
+    <string name="search_page_txt_title">How to Influence with \n Tactical Empathy</string>
+    <string name="txt_all_categories">All Categories</string>
+    <string name="txt_category">CULTURE</string>
+    <string name="empty_description_text">It looks like you aren\'t enrolled in any podcasts, but it\'s easy to get started.</string>
+    <string name="details_description_txt">
+        There are many variations of passages of Lorem Ipsum available,
+        but the majority have suffered alteration in some form, by injected humour,
+        or randomised words which don\'t look even slightly believable.
+        There are many variations of passages of Lorem Ipsum available,
+        but the majority have suffered alteration in some form, by injected humour,
+        or randomised words which don\'t look even slightly believable.
+        There are many variations of passages of Lorem Ipsum available,
+        but the majority have suffered alteration in some form, by injected humour,
+        or randomised words which don\'t look even slightly believable.
+        There are many variations of passages of Lorem Ipsum available,
+        but the majority have suffered alteration in some form, by injected humour,
+        or randomised words which don\'t look even slightly believable.
+        There are many variations of passages of Lorem Ipsum available,
+        but the majority have suffered alteration in some form, by injected humour,
+        or randomised words which don\'t look even slightly believable.
+    </string>
+    <string name="heading_download_page_txt"><b>Your</b> Shows</string>
+</resources>
